@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Infinite Dental Marketing — Privacy Policy & Terms of Service</title>
+    <title>Infinite Dental Marketing</title>
     <style>
         :root {
             --primary: #1a6b4a;
@@ -103,40 +103,65 @@
         section h2 {
             font-size: 1.6rem;
             color: var(--primary);
-            margin-bottom: 0.3rem;
+            margin-bottom: 0.8rem;
             padding-bottom: 0.8rem;
             border-bottom: 2px solid var(--primary-light);
         }
 
-        .effective-date {
-            font-size: 0.9rem;
-            color: var(--text-muted);
-            margin-bottom: 1.5rem;
+        section p {
+            font-size: 1rem;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        /* Document cards grid */
+        .doc-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        @media (max-width: 600px) {
+            .doc-grid { grid-template-columns: 1fr; }
+        }
+
+        .doc-card {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.8rem;
+            box-shadow: var(--shadow);
+            text-decoration: none;
+            color: var(--text);
+            transition: transform 0.15s, box-shadow 0.15s;
             display: block;
         }
 
-        h3 {
-            font-size: 1.15rem;
-            color: var(--text);
-            margin: 1.8rem 0 0.6rem;
+        .doc-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.10);
         }
 
-        p, li {
-            font-size: 0.97rem;
-            color: #333;
-            margin-bottom: 0.6rem;
+        .doc-card h3 {
+            font-size: 1.2rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
         }
 
-        ul, ol {
-            padding-left: 1.5rem;
-            margin-bottom: 0.8rem;
+        .doc-card p {
+            font-size: 0.92rem;
+            color: var(--text-muted);
+            margin: 0;
         }
 
-        li { margin-bottom: 0.4rem; }
-
-        strong { color: var(--text); }
-
-        a { color: var(--primary); }
+        .doc-card .arrow {
+            display: inline-block;
+            margin-top: 0.8rem;
+            font-size: 0.9rem;
+            color: var(--primary);
+            font-weight: 600;
+        }
 
         /* Contact card */
         .contact-card {
@@ -150,6 +175,8 @@
             margin-bottom: 0.3rem;
             font-size: 0.95rem;
         }
+
+        .contact-card a { color: var(--primary); }
 
         /* Footer */
         footer {
@@ -172,11 +199,11 @@
 
 <header>
     <div class="header-inner">
-        <a href="#" class="logo">Infinite Dental Marketing</a>
+        <a href="/" class="logo">Infinite Dental Marketing</a>
         <nav>
-            <a href="#privacy-policy">Privacy Policy</a>
-            <a href="#terms-of-service">Terms of Service</a>
-            <a href="#contact">Contact</a>
+            <a href="/">Home</a>
+            <a href="/privacy-policy.html">Privacy Policy</a>
+            <a href="/terms-of-service.html">Terms of Service</a>
         </nav>
     </div>
 </header>
@@ -188,139 +215,30 @@
 
 <main>
 
-    <!-- ======================== PRIVACY POLICY ======================== -->
-    <section id="privacy-policy">
-        <h2>Privacy Policy</h2>
-        <span class="effective-date">Effective Date: April 6, 2026</span>
+    <section>
+        <h2>About</h2>
+        <p>Infinite Dental Marketing provides AI-powered receptionist and communication services to dental practices, including automated phone answering, appointment scheduling, and SMS notifications for patients and staff.</p>
+        <p>For details on how we collect and use information, and the terms governing our services, please review the documents below.</p>
 
-        <p>Infinite Dental Marketing ("we," "us," or "our") provides AI-powered receptionist and communication services to dental practices. This Privacy Policy explains how we collect, use, disclose, and safeguard information when you interact with our services, including phone calls, SMS/text messages, and related platforms.</p>
-
-        <h3>1. Information We Collect</h3>
-        <p>We may collect the following types of information:</p>
-        <ul>
-            <li><strong>Contact Information:</strong> Name, phone number, and email address provided during calls or messages.</li>
-            <li><strong>Appointment Information:</strong> Date, time, provider, and reason for visit when scheduling or confirming appointments.</li>
-            <li><strong>Call and Message Data:</strong> Call recordings, transcripts, SMS/MMS message content, and metadata (timestamps, duration).</li>
-            <li><strong>Device and Usage Data:</strong> IP address, browser type, and interaction data when visiting our websites or dashboards.</li>
-        </ul>
-
-        <h3>2. How We Use Your Information</h3>
-        <p>We use the information we collect to:</p>
-        <ul>
-            <li>Facilitate appointment scheduling, confirmations, and reminders on behalf of dental practices.</li>
-            <li>Deliver SMS/text messages related to your dental care, including emergency escalation notifications to staff.</li>
-            <li>Improve the quality, accuracy, and reliability of our AI receptionist services.</li>
-            <li>Comply with legal and regulatory requirements, including healthcare communication standards.</li>
-        </ul>
-
-        <h3>3. SMS/Text Messaging</h3>
-        <p>By providing your phone number to a dental practice that uses our services, you may receive SMS/text messages related to:</p>
-        <ul>
-            <li>Appointment scheduling, confirmations, and reminders.</li>
-            <li>Urgent or emergency notifications directed to dental office staff.</li>
-            <li>Follow-up communications requested during your call.</li>
-        </ul>
-        <p><strong>Message frequency varies.</strong> Message and data rates may apply. You may opt out of non-essential text messages at any time by replying <strong>STOP</strong> to any message. Reply <strong>HELP</strong> for assistance.</p>
-        <p>We do not sell, rent, or share your phone number or message content with third parties for marketing purposes. Your information is shared only with the dental practice you contacted and service providers necessary to deliver messages (e.g., our telecommunications provider).</p>
-
-        <h3>4. Data Sharing and Disclosure</h3>
-        <p>We may share information with:</p>
-        <ul>
-            <li><strong>Dental Practices:</strong> The practice you contacted receives your call and appointment details to provide care.</li>
-            <li><strong>Service Providers:</strong> Trusted vendors who assist with telecommunications, hosting, and data processing under strict confidentiality agreements.</li>
-            <li><strong>Legal Requirements:</strong> When required by law, regulation, or legal process.</li>
-        </ul>
-        <p>We do <strong>not</strong> sell personal information to third parties.</p>
-
-        <h3>5. Data Security</h3>
-        <p>We implement industry-standard security measures to protect your information, including encryption in transit and at rest, access controls, and regular security assessments. Our systems are designed with healthcare data privacy requirements in mind.</p>
-
-        <h3>6. Data Retention</h3>
-        <p>We retain personal information only as long as necessary to fulfill the purposes described in this policy or as required by law. Call recordings and message logs are retained according to the dental practice's retention policies and applicable regulations.</p>
-
-        <h3>7. Your Rights</h3>
-        <p>Depending on your jurisdiction, you may have the right to:</p>
-        <ul>
-            <li>Access the personal information we hold about you.</li>
-            <li>Request correction or deletion of your information.</li>
-            <li>Opt out of SMS/text messages by replying STOP.</li>
-            <li>File a complaint with a relevant data protection authority.</li>
-        </ul>
-        <p>To exercise any of these rights, please contact us using the information below.</p>
-
-        <h3>8. Children's Privacy</h3>
-        <p>Our services are not directed to individuals under 13. We do not knowingly collect personal information from children under 13. If you believe we have collected information from a child, please contact us immediately.</p>
-
-        <h3>9. Changes to This Policy</h3>
-        <p>We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated effective date. Continued use of our services after changes constitutes acceptance of the revised policy.</p>
-
-        <div class="contact-card" id="contact">
-            <h3 style="margin-top:0;">Contact Us</h3>
-            <p><strong>Infinite Dental Marketing</strong></p>
-            <p>Email: <a href="mailto:privacy@infinitedentalmarketing.com">privacy@infinitedentalmarketing.com</a></p>
-            <p>Phone: <a href="tel:+16124600526">(612) 460-0526</a></p>
+        <div class="doc-grid">
+            <a class="doc-card" href="/privacy-policy.html">
+                <h3>Privacy Policy</h3>
+                <p>How we collect, use, and safeguard information from patients and dental practices.</p>
+                <span class="arrow">Read &rarr;</span>
+            </a>
+            <a class="doc-card" href="/terms-of-service.html">
+                <h3>Terms of Service</h3>
+                <p>The terms that govern your use of our AI receptionist and SMS services.</p>
+                <span class="arrow">Read &rarr;</span>
+            </a>
         </div>
     </section>
 
-    <!-- ======================== TERMS OF SERVICE ======================== -->
-    <section id="terms-of-service">
-        <h2>Terms of Service</h2>
-        <span class="effective-date">Effective Date: April 6, 2026</span>
-
-        <p>These Terms of Service ("Terms") govern your use of services provided by Infinite Dental Marketing ("we," "us," or "our"), including our AI-powered receptionist platform, SMS/text messaging services, and related tools provided to dental practices and their patients.</p>
-
-        <h3>1. Acceptance of Terms</h3>
-        <p>By using our services — including calling a dental practice that uses our AI receptionist, receiving SMS/text messages from our platform, or accessing any of our web-based tools — you agree to be bound by these Terms. If you do not agree, please discontinue use of our services.</p>
-
-        <h3>2. Description of Services</h3>
-        <p>Infinite Dental Marketing provides AI-powered communication services for dental practices, including:</p>
-        <ul>
-            <li>Automated phone answering and appointment scheduling via AI receptionist.</li>
-            <li>SMS/text message notifications for appointment reminders, confirmations, and staff alerts.</li>
-            <li>Emergency escalation notifications to dental office staff via SMS with secure links.</li>
-            <li>Call monitoring dashboards and administrative tools for dental offices.</li>
-        </ul>
-
-        <h3>3. SMS/Text Message Terms</h3>
-        <p>By interacting with a dental practice that uses our services, you may receive text messages. By providing your mobile number, you consent to receive these messages.</p>
-        <ul>
-            <li><strong>Opt-Out:</strong> Reply <strong>STOP</strong> to any message to unsubscribe from non-essential messages.</li>
-            <li><strong>Help:</strong> Reply <strong>HELP</strong> to any message for assistance.</li>
-            <li><strong>Message Frequency:</strong> Varies based on your interactions with the dental practice.</li>
-            <li><strong>Charges:</strong> Message and data rates may apply per your carrier plan.</li>
-        </ul>
-        <p>Consent to receive text messages is not a condition of purchasing any goods or services.</p>
-
-        <h3>4. User Responsibilities</h3>
-        <p>You agree to:</p>
-        <ul>
-            <li>Provide accurate and current information when interacting with our services.</li>
-            <li>Not use our services for any unlawful purpose or to transmit harmful content.</li>
-            <li>Not attempt to interfere with, compromise, or disrupt our systems or services.</li>
-        </ul>
-
-        <h3>5. Intellectual Property</h3>
-        <p>All content, software, technology, and branding associated with our services are the property of Infinite Dental Marketing or its licensors. You may not copy, modify, distribute, or create derivative works without our written consent.</p>
-
-        <h3>6. Disclaimer of Warranties</h3>
-        <p>Our services are provided "as is" and "as available." We make no warranties, express or implied, regarding reliability, accuracy, or fitness for a particular purpose. Our AI receptionist is a communication tool and does not provide medical advice, diagnosis, or treatment.</p>
-
-        <h3>7. Limitation of Liability</h3>
-        <p>To the fullest extent permitted by law, Infinite Dental Marketing shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising out of your use of our services, including but not limited to missed appointments, miscommunications, or service interruptions.</p>
-
-        <h3>8. Indemnification</h3>
-        <p>You agree to indemnify and hold harmless Infinite Dental Marketing, its officers, employees, and partners from any claims, losses, or damages arising from your misuse of our services or violation of these Terms.</p>
-
-        <h3>9. Governing Law</h3>
-        <p>These Terms are governed by and construed in accordance with the laws of the State of Texas, without regard to conflict of law principles.</p>
-
-        <h3>10. Modifications</h3>
-        <p>We reserve the right to modify these Terms at any time. Updated Terms will be posted on this page with a revised effective date. Continued use of our services after changes constitutes acceptance.</p>
-
-        <h3>11. Contact</h3>
+    <section>
+        <h2>Contact</h2>
         <div class="contact-card">
             <p><strong>Infinite Dental Marketing</strong></p>
-            <p>Email: <a href="mailto:legal@infinitedentalmarketing.com">legal@infinitedentalmarketing.com</a></p>
+            <p>Email: <a href="mailto:contact@infinitedentalmarketing.com">contact@infinitedentalmarketing.com</a></p>
             <p>Phone: <a href="tel:+16124600526">(612) 460-0526</a></p>
         </div>
     </section>
