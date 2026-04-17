@@ -232,7 +232,7 @@
         <h3>What messages does Brooke AI send?</h3>
         <p>Brooke AI sends SMS messages exclusively to authorized dental office staff for the following purposes:</p>
         <ul>
-            <li><strong>Emergency escalation alerts</strong> — sent when the AI determines a patient call requires immediate staff intervention (e.g., a dental emergency or patient requesting urgent callback).</li>
+            <li><strong>Emergency escalation alerts</strong> — sent when the AI determines a patient call requires immediate staff intervention (e.g., a dental emergency or patient requesting urgent callback). These messages may include a secure link to a call transcript page hosted on the practice's Brooke AI dashboard (e.g., <code>https://brooke.example.com/emergency/abc123</code>).</li>
             <li><strong>Opt-in confirmation</strong> — a one-time message confirming your enrollment in SMS alerts.</li>
             <li><strong>Keyword responses</strong> — replies to STOP, HELP, or START commands you send.</li>
         </ul>
@@ -241,6 +241,23 @@
         <div class="highlight">
             <p><strong>Consent is not a condition of purchase.</strong> You are not required to opt in to Brooke AI SMS alerts to use the Brooke AI service or any services from Infinite Dental Marketing.</p>
         </div>
+
+        <h3>Sample messages</h3>
+        <p>Below are examples of the SMS messages you may receive from Brooke AI:</p>
+
+        <p><strong>Escalation alert:</strong></p>
+        <div class="sms-example">Brooke AI: A patient is in need of your attention! Please check the dashboard.
+Reply STOP to opt out.</div>
+
+        <p><strong>Emergency escalation alert (with embedded link):</strong></p>
+        <div class="sms-example">Brooke AI: A patient is in need of your attention! Listen to their message:
+https://brooke.brooklynblvddental.com/emergency/abc123
+Reply STOP to opt out.</div>
+
+        <p><strong>Opt-in confirmation:</strong></p>
+        <div class="sms-example">Brooke AI: Thanks for subscribing to operational alerts! Reply HELP for help. Message frequency may vary. Msg&amp;data rates may apply. Consent is not a condition of purchase. Reply STOP to opt out.</div>
+
+        <p>The embedded link in emergency alerts points to a secure, token-protected page on the dental practice's Brooke AI dashboard where staff can review the call transcript. These links are unique per escalation event and expire after use.</p>
     </section>
 
     <section>
@@ -291,11 +308,11 @@
             <tbody>
                 <tr>
                     <td><code>STOP</code></td>
-                    <td>Immediately opt out of all Brooke AI SMS messages. You will receive a final confirmation message and no further messages will be sent.</td>
+                    <td>Immediately opt out of all Brooke AI SMS messages. You will receive a final confirmation message and no further messages will be sent. You can also text <code>UNSUBSCRIBE</code>, <code>CANCEL</code>, <code>END</code>, or <code>QUIT</code>.</td>
                 </tr>
                 <tr>
                     <td><code>START</code></td>
-                    <td>Re-subscribe to Brooke AI SMS alerts after previously opting out.</td>
+                    <td>Re-subscribe to Brooke AI SMS alerts after previously opting out. You can also text <code>UNSTOP</code>, <code>SUBSCRIBE</code>, or <code>YES</code>.</td>
                 </tr>
                 <tr>
                     <td><code>HELP</code></td>
