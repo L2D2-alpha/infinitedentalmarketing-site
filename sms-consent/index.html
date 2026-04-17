@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMS Consent &amp; Opt-In — Brooke AI by Infinite Dental Marketing</title>
+    <style>
+        :root {
+            --primary: #1a6b4a;
+            --primary-light: #e8f5ee;
+            --text: #1a1a2e;
+            --text-muted: #555;
+            --bg: #fafbfc;
+            --white: #ffffff;
+            --border: #e0e0e0;
+            --shadow: 0 2px 12px rgba(0,0,0,0.08);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        header {
+            background: var(--white);
+            border-bottom: 1px solid var(--border);
+            padding: 1.5rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+        }
+
+        .header-inner {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .logo {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+            letter-spacing: -0.02em;
+        }
+
+        nav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            margin-left: 1.5rem;
+            transition: color 0.2s;
+        }
+
+        nav a:hover { color: var(--primary); }
+        nav a.active { color: var(--primary); font-weight: 600; }
+
+        .hero {
+            background: linear-gradient(135deg, var(--primary) 0%, #2a8f65 100%);
+            color: white;
+            text-align: center;
+            padding: 3.5rem 2rem;
+        }
+
+        .hero h1 { font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem; }
+        .hero p { font-size: 1.1rem; opacity: 0.9; }
+
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem 4rem;
+        }
+
+        section {
+            background: var(--white);
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            border: 1px solid var(--border);
+        }
+
+        section h2 {
+            font-size: 1.6rem;
+            color: var(--primary);
+            margin-bottom: 0.3rem;
+            padding-bottom: 0.8rem;
+            border-bottom: 2px solid var(--primary-light);
+        }
+
+        .effective-date {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+            display: block;
+        }
+
+        h3 { font-size: 1.15rem; color: var(--text); margin: 1.8rem 0 0.6rem; }
+
+        p, li { font-size: 0.97rem; color: #333; margin-bottom: 0.6rem; }
+
+        ul, ol { padding-left: 1.5rem; margin-bottom: 0.8rem; }
+        li { margin-bottom: 0.4rem; }
+
+        strong { color: var(--text); }
+        a { color: var(--primary); }
+
+        .consent-box {
+            background: #1f2937;
+            border-radius: 8px;
+            padding: 1.2rem 1.5rem;
+            margin: 1rem 0 1.5rem;
+            color: #d1d5db;
+            font-size: 0.93rem;
+            line-height: 1.6;
+        }
+
+        .consent-box strong { color: #f3f4f6; }
+
+        .sms-example {
+            background: var(--primary-light);
+            border: 1px solid #a7d7c5;
+            border-radius: 8px;
+            padding: 1rem 1.5rem;
+            margin: 1rem 0 1.5rem;
+            font-family: 'SF Mono', SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+            font-size: 0.9rem;
+            color: #1a6b4a;
+            line-height: 1.6;
+            white-space: pre-wrap;
+        }
+
+        .keyword-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            font-size: 0.95rem;
+        }
+
+        .keyword-table th {
+            text-align: left;
+            padding: 0.6rem 1rem;
+            background: var(--bg);
+            border-bottom: 2px solid var(--border);
+            color: var(--text);
+            font-weight: 600;
+        }
+
+        .keyword-table td {
+            padding: 0.6rem 1rem;
+            border-bottom: 1px solid #f3f4f6;
+            color: #333;
+        }
+
+        .keyword-table code {
+            background: #f3f4f6;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+        }
+
+        .highlight {
+            background: #eff6ff;
+            border: 1px solid #bfdbfe;
+            border-radius: 8px;
+            padding: 1rem 1.5rem;
+            margin: 1rem 0;
+        }
+
+        .highlight p { color: #1e40af; font-size: 0.93rem; margin-bottom: 0; }
+
+        .contact-card {
+            background: var(--primary-light);
+            border-radius: 8px;
+            padding: 1.2rem 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .contact-card p { margin-bottom: 0.3rem; font-size: 0.95rem; }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--border);
+        }
+
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 1.5rem; }
+            section { padding: 1.5rem; }
+            nav a { margin-left: 1rem; font-size: 0.85rem; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="header-inner">
+        <a href="/" class="logo">Infinite Dental Marketing</a>
+        <nav>
+            <a href="/sms-consent" class="active">SMS Consent</a>
+            <a href="/privacy-policy">Privacy Policy</a>
+            <a href="/terms-of-service">Terms of Service</a>
+        </nav>
+    </div>
+</header>
+
+<div class="hero">
+    <h1>Brooke AI — SMS Consent &amp; Opt-In</h1>
+    <p>How we collect consent, what messages you'll receive, and how to opt out</p>
+</div>
+
+<main>
+
+    <section>
+        <h2>SMS Program Overview</h2>
+        <span class="effective-date">Effective Date: April 17, 2026</span>
+
+        <p><strong>Brooke AI</strong> is the AI-powered dental receptionist platform operated by <strong>Infinite Dental Marketing</strong>. Brooke AI handles patient phone calls, schedules appointments, and sends SMS text messages to authorized dental office staff for operational alerts.</p>
+
+        <h3>What messages does Brooke AI send?</h3>
+        <p>Brooke AI sends SMS messages exclusively to authorized dental office staff for the following purposes:</p>
+        <ul>
+            <li><strong>Emergency escalation alerts</strong> — sent when the AI determines a patient call requires immediate staff intervention (e.g., a dental emergency or patient requesting urgent callback).</li>
+            <li><strong>Opt-in confirmation</strong> — a one-time message confirming your enrollment in SMS alerts.</li>
+            <li><strong>Keyword responses</strong> — replies to STOP, HELP, or START commands you send.</li>
+        </ul>
+        <p><strong>Message frequency varies</strong> based on call volume and escalation events. Most users receive fewer than 10 messages per month. Message and data rates may apply.</p>
+
+        <div class="highlight">
+            <p><strong>Consent is not a condition of purchase.</strong> You are not required to opt in to Brooke AI SMS alerts to use the Brooke AI service or any services from Infinite Dental Marketing.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Opt-In Process</h2>
+
+        <p>Brooke AI SMS alerts are available to authorized staff members at dental practices that use the Brooke AI platform. Consent is collected through a secure, password-protected admin dashboard. The complete opt-in process is as follows:</p>
+
+        <h3>Step 1 — Log in to the Brooke AI Admin Dashboard</h3>
+        <p>An authorized admin or staff member logs into the Brooke AI Admin Dashboard at their office's secure URL using their username and password credentials.</p>
+
+        <h3>Step 2 — Navigate to Escalation Contacts</h3>
+        <p>Under <strong>Settings &gt; Emergency Escalation Contacts</strong>, the staff member adds their name and mobile phone number.</p>
+
+        <h3>Step 3 — Enable SMS and review consent disclosure</h3>
+        <p>The staff member checks the <strong>"Notify via SMS"</strong> checkbox. Upon checking, the following consent disclosure is displayed directly on-screen next to their contact entry:</p>
+
+        <div class="consent-box">
+            <strong>SMS Consent Disclosure:</strong>
+            By providing your phone number, you agree to receive SMS operational alerts from Brooke AI.
+            Message frequency may vary. Standard Message and Data Rates may apply.
+            Reply STOP to opt out. Reply HELP for help.
+            We will not share mobile information with third parties for promotional or marketing purposes.
+        </div>
+
+        <p>Additionally, a prominent disclosure at the top of the escalation contacts section includes links to our <a href="/privacy-policy">Privacy Policy</a> and <a href="/terms-of-service">Terms of Service</a>.</p>
+
+        <h3>Step 4 — Save contacts to confirm enrollment</h3>
+        <p>The staff member clicks <strong>"Save Contacts"</strong> to confirm their enrollment. This action records their consent in our system.</p>
+
+        <h3>Step 5 — Receive opt-in confirmation SMS</h3>
+        <p>An opt-in confirmation SMS is automatically sent to the provided phone number:</p>
+
+        <div class="sms-example">Brooke AI: Thanks for subscribing to operational alerts! Reply HELP for help. Message frequency may vary. Msg&amp;data rates may apply. Consent is not a condition of purchase. Reply STOP to opt out.</div>
+
+        <h3>How consent is recorded</h3>
+        <p>Each contact's opt-in status is stored with a timestamp in the office configuration database. When a contact opts in, the date and time are recorded. When a contact opts out (via STOP keyword or admin dashboard), the opt-out date and time are also recorded. Only contacts who have actively opted in and have not subsequently opted out will receive SMS messages from Brooke AI.</p>
+    </section>
+
+    <section>
+        <h2>SMS Keywords &amp; Opt-Out</h2>
+
+        <p>You can manage your Brooke AI SMS enrollment at any time by texting the following keywords to the number that sent you a message:</p>
+
+        <table class="keyword-table">
+            <thead>
+                <tr><th>Keyword</th><th>What happens</th></tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>STOP</code></td>
+                    <td>Immediately opt out of all Brooke AI SMS messages. You will receive a final confirmation message and no further messages will be sent.</td>
+                </tr>
+                <tr>
+                    <td><code>START</code></td>
+                    <td>Re-subscribe to Brooke AI SMS alerts after previously opting out.</td>
+                </tr>
+                <tr>
+                    <td><code>HELP</code></td>
+                    <td>Receive support contact information and instructions.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>You can also disable SMS alerts at any time by unchecking "Notify via SMS" in the Brooke AI Admin Dashboard, or by contacting your office administrator.</p>
+    </section>
+
+    <section>
+        <h2>Data Sharing &amp; Privacy</h2>
+
+        <p>We will <strong>not</strong> sell, rent, or share your phone number or SMS message content with third parties for marketing or promotional purposes.</p>
+        <p>Your phone number and message data are shared only with:</p>
+        <ul>
+            <li>The dental practice you are affiliated with.</li>
+            <li>Our telecommunications provider (Telnyx), solely for the purpose of delivering messages.</li>
+        </ul>
+        <p>For complete details, please review our <a href="/privacy-policy">Privacy Policy</a>.</p>
+    </section>
+
+    <section>
+        <h2>Contact</h2>
+
+        <p><strong>Brand name:</strong> Brooke AI</p>
+        <p><strong>Operated by:</strong> Infinite Dental Marketing</p>
+        <p>For questions about the Brooke AI SMS program, reply <code>HELP</code> to any Brooke AI message or contact us directly:</p>
+
+        <div class="contact-card">
+            <p><strong>Infinite Dental Marketing</strong></p>
+            <p>Email: <a href="mailto:support@infinitedentalmarketing.com">support@infinitedentalmarketing.com</a></p>
+            <p>Phone: <a href="tel:+16124600526">(612) 460-0526</a></p>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    &copy; 2026 Infinite Dental Marketing. All rights reserved.
+</footer>
+
+</body>
+</html>
