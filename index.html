@@ -1,116 +1,16 @@
 ---
 layout: default
-title: Brooke AI — the AI receptionist for Open Dental practices
+title: Infinite Dental Marketing
 description: >-
-  Brooke answers your dental practice's phones after hours, books appointments,
-  and hands urgent calls to your team. Call the live demo and hear her yourself.
+  Something new is on the way. Infinite Dental Marketing is building the new
+  home of Brooke AI, the AI receptionist for dental practices.
 ---
 
 <div class="hero">
   <div class="wrap">
-    <p class="eyebrow">Meet Brooke — the AI receptionist for Open Dental practices</p>
-    <h1>Your office closes at 1pm on Fridays. Your phones don't have to.</h1>
-    <p class="sub">Don't take our word for it. Call Brooke right now:</p>
-    <a class="demo-number" href="tel:+17635550142">
-      <span class="phone-icon">☏</span>
-      {{ site.company.demo_number }}
-    </a>
-    <p class="fine">Live demo line · Book a pretend appointment, ask about insurance, try to stump her</p>
+    <p class="eyebrow">Infinite Dental Marketing</p>
+    <h1>Something new is on the way</h1>
+    <p class="sub">We're building the new home of Brooke AI — the AI receptionist for dental practices. Check back soon.</p>
+    <p><a class="btn btn-primary" href="mailto:{{ site.company.email }}">Get in touch</a></p>
   </div>
 </div>
-
-<section>
-  <div class="wrap">
-    <div class="section-head">
-      <h2>Listen in on a real call</h2>
-      <p class="muted">This is Brooke handling an actual patient conversation. It plays silently — tap unmute to hear her voice.</p>
-    </div>
-
-    <div class="player simulated" id="demo-player">
-      <div class="player-bar">
-        <button id="play-btn" aria-label="Play or pause the demo call">▶</button>
-        <div class="viz" id="viz" aria-hidden="true">
-          <span></span><span></span><span></span><span></span><span></span>
-          <span></span><span></span><span></span><span></span><span></span>
-          <span></span><span></span>
-        </div>
-        <span class="player-meta" id="time-meta">Real call</span>
-        <button class="unmute" id="unmute-btn">🔇 Tap to unmute</button>
-      </div>
-      <div class="transcript" id="transcript" aria-live="off"></div>
-      <audio id="demo-audio" src="{{ '/assets/demo/demo-call.mp3' | relative_url }}" preload="metadata" loop muted playsinline></audio>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <div class="section-head">
-      <h2>Two months in at Brooklyn Blvd Dental</h2>
-      <p class="muted">Brooke's first deployment is a real, multi-doctor practice in Brooklyn Center, Minnesota — owned by the dentist who built her.</p>
-    </div>
-    <div class="stats">
-      <div class="stat">
-        <span class="num">15</span>
-        <span class="label">Appointments booked in her first 2 months</span>
-      </div>
-      <div class="stat">
-        <span class="num">5+ hrs</span>
-        <span class="label">Of patient calls answered</span>
-      </div>
-      <div class="stat">
-        <span class="num">13–15</span>
-        <span class="label">Calls covered every Friday after close</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="wrap grid-2">
-    <div>
-      <h2>How it works</h2>
-      <ol class="steps">
-        <li><strong>Your calls route to Brooke</strong> when your team can't answer — after hours, over lunch, or when every line is busy.</li>
-        <li><strong>She handles the call</strong> — scheduling, rescheduling, insurance questions, directions, and the everyday questions your front desk answers fifty times a week.</li>
-        <li><strong>Anything clinical or urgent goes to your staff</strong> — Brooke escalates immediately and texts your on-call team a secure link to the call.</li>
-      </ol>
-      <p><a href="{{ '/brooke-ai/' | relative_url }}">See everything Brooke handles →</a></p>
-    </div>
-    <div class="card">
-      <p class="badge">Simple pricing</p>
-      <p class="tight" style="font-family: var(--font-display); font-size: 2.2rem; font-weight: 600; color: var(--heading);">{{ site.company.price }}<span style="font-size: 1rem; color: var(--muted); font-family: var(--font-body); font-weight: 400;">/month</span></p>
-      <p class="muted">Month-to-month. Cancel anytime. No annual contract, ever.</p>
-      <p class="muted">Built for practices running Open Dental.</p>
-      <a class="btn btn-ghost" href="{{ '/pricing/' | relative_url }}">See full pricing</a>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="wrap grid-2">
-    <div class="card">
-      <h3>Built inside a real practice</h3>
-      <p>Brooke wasn't designed in a boardroom. She was built by a practicing dentist who owns Brooklyn Blvd Dental — after years of paying for answering services that never quite fit how a dental office actually runs.</p>
-      <a href="{{ '/about/' | relative_url }}">Read the story →</a>
-    </div>
-    <div class="card">
-      <h3>Serious about privacy</h3>
-      <p>Healthcare calls deserve healthcare-grade handling. We sign a Business Associate Agreement with every practice, and our AI providers operate under BAAs with us. Patient data is never sold or used for marketing.</p>
-      <a href="{{ '/privacy-policy/' | relative_url }}">Our privacy policy →</a>
-    </div>
-  </div>
-</section>
-
-<section class="cta-band">
-  <div class="wrap">
-    <h2>The demo is a phone call away</h2>
-    <p class="muted">Call Brooke, pretend to be a patient, and judge for yourself.</p>
-    <div class="actions">
-      <a class="btn btn-primary" href="tel:+17635550142">Call {{ site.company.demo_number }}</a>
-      <a class="btn btn-ghost" href="{{ '/contact/' | relative_url }}">Email us instead</a>
-    </div>
-  </div>
-</section>
-
-<script src="{{ '/assets/js/demo-player.js' | relative_url }}"></script>

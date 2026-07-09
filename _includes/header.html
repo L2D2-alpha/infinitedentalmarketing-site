@@ -1,16 +1,5 @@
 <header class="site-header">
   <div class="wrap header-inner">
     <a class="brand" href="{{ '/' | relative_url }}">Infinite Dental Marketing</a>
-    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true">
-    <label for="nav-toggle" class="nav-toggle-label" aria-label="Open menu">
-      <span></span><span></span><span></span>
-    </label>
-    <nav class="site-nav" aria-label="Main">
-      <a href="{{ '/brooke-ai/' | relative_url }}">Brooke AI</a>
-      <a href="{{ '/pricing/' | relative_url }}">Pricing</a>
-      <a href="{{ '/about/' | relative_url }}">About</a>
-      <a href="{{ '/blog/' | relative_url }}">Blog</a>
-      <a class="btn btn-primary nav-cta" href="tel:{{ site.company.demo_number | remove: '(' | remove: ')' | remove: ' ' | remove: '-' | prepend: '+1' }}">Call the demo</a>
-    </nav>
   </div>
 </header>
