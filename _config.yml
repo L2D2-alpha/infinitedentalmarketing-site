@@ -1,0 +1,29 @@
+title: Infinite Dental Marketing
+tagline: Home of Brooke AI, the AI receptionist for Open Dental practices
+description: >-
+  Brooke AI answers your dental practice's phones after hours, schedules
+  appointments in Open Dental, and hands urgent calls to your team.
+  Built by a practicing dentist at Brooklyn Blvd Dental.
+url: "https://www.infinitedentalmarketing.com"
+baseurl: ""
+
+markdown: kramdown
+permalink: /blog/:title/
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Values used across the site. Change once here, updates everywhere.
+company:
+  name: Infinite Dental Marketing
+  product: Brooke AI
+  phone: "(612) 460-0526"
+  email: hello@infinitedentalmarketing.com
+  demo_number: "(763) 555-0142" # REPLACE with the real demo line when provisioned
+  price: "$400"
+  setup_fee: "$500"
+  included_calls: "600"
+
+exclude:
+  - README.md

@@ -1,0 +1,9 @@
+[
+  { "t": 0.0,  "speaker": "brooke",  "text": "Thanks for calling Brooklyn Blvd Dental, this is Brooke. How can I help you today?" },
+  { "t": 4.5,  "speaker": "patient", "text": "Hi, I need to reschedule my cleaning next week. Something came up at work." },
+  { "t": 9.0,  "speaker": "brooke",  "text": "No problem at all. I see your appointment on Tuesday at 2pm. Would Thursday morning work instead?" },
+  { "t": 15.0, "speaker": "patient", "text": "Thursday morning works. Do you have anything around 9?" },
+  { "t": 18.5, "speaker": "brooke",  "text": "We do — I have 9:10am open with the hygienist. Should I book that for you?" },
+  { "t": 23.0, "speaker": "patient", "text": "Yes, that's perfect. Thank you!" },
+  { "t": 25.5, "speaker": "brooke",  "text": "You're all set for Thursday at 9:10am. You'll get a confirmation text shortly. Anything else I can help with?" }
+]
