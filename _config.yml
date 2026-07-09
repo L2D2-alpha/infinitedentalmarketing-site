@@ -21,7 +21,7 @@ company:
   phone: "(612) 460-0526"
   email: hello@infinitedentalmarketing.com
   demo_number: "(763) 555-0142" # REPLACE with the real demo line when provisioned
-  price: "$400"
+  price: "$398"
   setup_fee: "$500"
   included_calls: "600"
 

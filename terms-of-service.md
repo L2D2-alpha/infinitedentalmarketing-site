@@ -63,9 +63,7 @@ You agree to indemnify and hold harmless Infinite Dental Marketing, its officers
 
 ## 9. Governing Law
 
-<!-- NOTE FOR SITE OWNER: this says Texas but IDM is a Minnesota business.
-     Likely a template leftover — confirm with your attorney and update. -->
-These Terms are governed by and construed in accordance with the laws of the State of Texas, without regard to conflict of law principles.
+These Terms are governed by and construed in accordance with the laws of the State of Minnesota, without regard to conflict of law principles.
 
 ## 10. Modifications
 
