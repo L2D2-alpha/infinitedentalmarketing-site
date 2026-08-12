@@ -27,3 +27,8 @@ company:
 
 exclude:
   - README.md
+  - docs/
+  - CLAUDE.md
+  - REVIEW.md
+  - idm-site-handoff.md
+  - idm-site.zip
